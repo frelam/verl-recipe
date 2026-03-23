@@ -1,7 +1,7 @@
 set -x
 
 python3 -m verl.trainer.main_ppo \
-    custom_reward_function.path="/mnt/disk0/lhy/RL/gsm8k_format_custom_reward.py" \
+    custom_reward_function.path="qwen3_0.6B_gsm8k_custom_reward.py" \
     custom_reward_function.name="compute_score" \
     +custom_reward_function.reward_kwargs.check_thinking=true \
     +custom_reward_function.reward_kwargs.check_last_assitant=true \
